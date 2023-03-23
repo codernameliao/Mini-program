@@ -1,0 +1,29 @@
+<view class="">
+  <view class="imagesize">
+    <image src="https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/index轮播图-欢迎.jpg"></image>
+  </view>
+
+  <view class="ipt-wrap">
+    <!-- 账号登录 -->
+    <view style="display:flex;align-items:center;justify-content:center">
+      <text class="iconfont font22 icon-geren"></text>
+      <input type="text" style="width:250px;" data-ipt="1" placeholder="请输入手机号码" class="ipt flex1 {{isIptborder == 1 ? 'iptnoneborder' : 'iptborder'}}" maxlength="11" bindfocus="selectFoucs" bindinput="IptPhoneValue" bindblur="selectBlur"></input>
+    </view>
+
+    <!-- 密码输入 -->
+    <text>\n</text>
+    <view style="display:flex;align-items:center;justify-content:center">
+      <text class="iconfont font20 icon-mima"></text>
+      <input type="password" style="width:250px;" data-ipt="3" placeholder="请输入密码" class="ipt flex1 {{isIptborder == 3 ? 'iptnoneborder' : 'iptborder'}}" bindfocus="selectFoucs" maxlength="16" bindinput="IptPassValue" bindblur="selectBlur"></input>
+    </view>
+
+  </view>
+
+  <view class="r-wrap">
+    <view class="loginbtn font16 _w100 mt20 color-fff" bindtap="loginGo">登录</view>
+    <view class="mt10 flex jc-center">
+      <text style="color:#767676">没有账号？</text>
+      <text style="color:#279efd" data-url="../user/user" bindtap="goMyhome"> 快速注册 </text>
+    </view>
+  </view>
+</view>

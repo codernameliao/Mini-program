@@ -1,0 +1,42 @@
+@import "../../components/assets/icon.wxss";
+ 
+.imagesize {
+  display: flex;
+  justify-content: center;
+}
+
+.logo>image{
+  width: 250rpx;
+  height: 208rpx;
+}
+.iptactive{
+  box-shadow: 0 0rpx 10rpx #ccc;
+  border-radius: 8rpx;
+}
+.iptnoneborder{
+  border-bottom:1px solid transparent;
+}
+.iptborder{
+  border-bottom:1px solid #e7f2ff;
+}
+.ipt-item{
+  position: relative;
+}
+.ipt{
+  margin-left: 20rpx;
+  height: 60rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  padding-left: 10rpx;
+}
+.loginbtn{
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 80rpx auto 20rpx;
+  border-radius: 10rpx;
+  background: linear-gradient(to right, #66ded0, #229dfe);
+}
+.ipt-wrap, .r-wrap, .agreement{
+  padding: 0 100rpx;
+}
